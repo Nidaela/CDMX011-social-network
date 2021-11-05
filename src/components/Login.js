@@ -1,5 +1,7 @@
 // eslint-disable-next-line import/no-cycle
 import { onNavigate } from '../main.js';
+// eslint-disable-next-line import/no-unresolved
+import { myAuth } from '../init-firebase.js';
 
 export const Login = () => {
   const loginDiv = document.createElement('div');
@@ -58,8 +60,8 @@ export const Login = () => {
   copyrightText.textContent = '2021 DevSocial. Todos los derechos reservados';
 
   homeButton.addEventListener('click', () => onNavigate('/'));
-  buttonLogin.addEventListener('click', () => onNavigate('/feed'));
-  googleIcon.addEventListener('click', () => onNavigate('/feed'));
+  buttonLogin.addEventListener('click', () => onNavigate()('/feed'));
+  googleIcon.addEventListener('click', () => myAuth());
   facebookIcon.addEventListener('click', () => onNavigate('/feed'));
   gitHubIcon.addEventListener('click', () => onNavigate('/feed'));
 
