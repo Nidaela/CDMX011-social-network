@@ -8,6 +8,7 @@ export const myAuth = () => {
   auth
     .signInWithPopup(provider)
     .then((result) => {
+      console.log(result);
       const credential = result.credential;
       const token = credential.accessToken;
       const user = result.user;
