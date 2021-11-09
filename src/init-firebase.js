@@ -1,5 +1,6 @@
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
+
   apiKey: 'AIzaSyBznzM-VtcAHSRFugVaR7Zv6T4r7XdZS7U',
   authDomain: 'dev-social-2b936.firebaseapp.com',
   projectId: 'dev-social-2b936',
